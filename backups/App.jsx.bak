@@ -1,0 +1,23 @@
+import { designSystemCSS } from './styles/design-system.js'
+import { BRAIN_AGENT, ALL_AGENTS_FLAT } from './data/agents.js'
+
+function App() {
+  return (
+    <>
+      <style>{designSystemCSS}</style>
+      <div className="app">
+        <main className="main">
+          <h1>1Leverage AI Agent Platform</h1>
+          <div className="card">
+            <h2>{BRAIN_AGENT.emoji} {BRAIN_AGENT.name}</h2>
+            <p>{BRAIN_AGENT.desc}</p>
+            <p><strong>Total Agents Loaded:</strong> {ALL_AGENTS_FLAT.length}</p>
+          </div>
+          <button>Platform Online</button>
+        </main>
+      </div>
+    </>
+  )
+}
+
+export default App

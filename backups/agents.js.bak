@@ -1,0 +1,33 @@
+export const AGENTS = {
+  brain: [
+    {
+      id: "brain-core",
+      emoji: "🧠",
+      name: "Brain-Autonomous-Core",
+      tier: "brain",
+      role: "Master Orchestrator",
+      color: "#a855f7",
+      desc: "Central intelligence coordinating the 1Leverage agent platform.",
+      tools: ["Claude API", "Company Memory", "Decision Engine"],
+      stats: { handled: "∞", success: "99.8%", uptime: "24/7", label: "Always On" }
+    }
+  ],
+  csuite: [],
+  meta: [],
+  hr: [],
+  productivity: [],
+  finance: [],
+  customersuccess: [],
+  marketing: [],
+  sales: [],
+  legal: [],
+  operations: [],
+  it: [],
+  strategy: []
+};
+
+export const ALL_AGENTS_FLAT = Object.values(AGENTS).flat();
+export const DEPT_AGENTS = ALL_AGENTS_FLAT.filter(a => a.tier === "dept");
+export const CSUITE_AGENTS = AGENTS.csuite;
+export const BRAIN_AGENT = AGENTS.brain[0];
+export const META_AGENTS = AGENTS.meta;
