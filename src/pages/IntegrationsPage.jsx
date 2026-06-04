@@ -29,8 +29,9 @@ export default function IntegrationsPage() {
         {ints.filter(i=>i.c===cat).map(i=>(<div key={i.n} className="card card-sm" style={{display:"flex",alignItems:"center",gap:10}}>
           <div style={{fontSize:22,flexShrink:0}}>{i.i}</div>
           <div style={{flex:1,minWidth:0}}><div style={{fontWeight:700,fontSize:12.5}}>{i.n}</div><div style={{fontSize:10.5,color:"var(--text3)",marginTop:1}}>{i.c}</div></div>
-          {i.s==="connected"?<span style={{fontSize:9.5,fontWeight:800,color:"var(--green)",background:"rgba(34,211,160,.08)",padding:"2px 6px",borderRadius:5,flexShrink:0}}>●ON</span>
-           :<button className="btn btn-ghost btn-xs" style={{flexShrink:0}} onClick={()=>connect(i.n)}>Connect</button>}
+          {i.s==="connected"
+            ?<span style={{fontSize:9.5,fontWeight:800,color:"var(--green)",background:"rgba(34,211,160,.08)",padding:"2px 6px",borderRadius:5,flexShrink:0}}>●ON</span>
+            :<button className="btn btn-ghost btn-xs" style={{flexShrink:0}} onClick={()=>connect(i.n)}>Connect</button>}
         </div>))}
       </div>
     </div>))}

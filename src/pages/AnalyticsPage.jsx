@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import MetricCard from '../components/MetricCard';
-const BARS = {
+const BARS={
   overview:[{l:"Workflow Automation Rate",v:96,c:"var(--amber)"},{l:"Meeting Summary Accuracy",v:89,c:"var(--pink)"},{l:"HR Ticket Deflection",v:73,c:"var(--blue)"},{l:"Candidate Match Accuracy",v:92,c:"var(--accent)"},{l:"Churn Prevention Rate",v:76,c:"var(--red)"},{l:"Onboarding Completion",v:86,c:"var(--green)"},{l:"Revenue Forecast Accuracy",v:91,c:"var(--orange)"},{l:"Security Detection Rate",v:99,c:"var(--cyan)"}],
   revenue:[{l:"Sales Pipeline Managed",v:82,c:"var(--orange)"},{l:"Lead Qualification Rate",v:79,c:"var(--lime)"},{l:"Proposal Win Rate",v:74,c:"var(--accent)"},{l:"Renewal Capture Rate",v:91,c:"var(--green)"},{l:"Upsell Conversion",v:68,c:"var(--amber)"},{l:"Churn Prevention",v:76,c:"var(--red)"}],
   operations:[{l:"Vendor SLA Compliance",v:91,c:"var(--amber)"},{l:"IT Helpdesk Resolution",v:78,c:"var(--blue)"},{l:"Procurement Speed",v:93,c:"var(--green)"},{l:"Facilities Resolution",v:90,c:"var(--cyan)"},{l:"Access Management",v:100,c:"var(--accent)"},{l:"License Optimization",v:95,c:"var(--lime)"}]
