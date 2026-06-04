@@ -1,5 +1,7 @@
+cat > src/pages/DashboardPage.jsx << 'EOF'
 import MetricCard from '../components/MetricCard.jsx'
 import AgentCard from '../components/AgentCard.jsx'
+import BrainConsole from './BrainConsole.jsx'
 import { ALL_AGENTS_FLAT, BRAIN_AGENT, CSUITE_AGENTS, DEPT_AGENTS } from '../data/agents.js'
 
 function DashboardPage() {
@@ -13,6 +15,8 @@ function DashboardPage() {
         <MetricCard title="C-Suite Agents" value={CSUITE_AGENTS.length} note="Executive operating layer" />
         <MetricCard title="Department Agents" value={DEPT_AGENTS.length} note="Operational automation layer" />
       </div>
+
+      <BrainConsole />
 
       <h2>Brain Core</h2>
       <AgentCard agent={BRAIN_AGENT} />
@@ -35,3 +39,4 @@ function DashboardPage() {
 }
 
 export default DashboardPage
+EOF
